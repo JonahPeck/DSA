@@ -50,3 +50,46 @@
 
 # Lists - O(n) if the indexing is happening from the front of the list and O(1) if from the back of the list
 
+#every data structure that we are going to create is coming from a class
+
+# constructor syntax
+# class Cookie:
+# # def __init__(self, color):
+# #     self.color = color
+# cookie_one = Color('green')
+
+class Cookie:
+    def __init__(self,color):
+        self.color = color
+
+    def get_color(self):
+        return self.color
+
+    def set_color(self,color):
+        self.color = color
+
+cookie_one = Cookie('green')
+cookie_two = Cookie('blue')
+
+print("Cookie one is", cookie_one.get_color())
+print("Cookie two is", cookie_two.get_color())
+
+
+cookie_one.set_color('yellow')
+
+print("\nCookie one is now", cookie_one.get_color())
+print("Cookie two is", cookie_two.get_color())
+
+#classes will be used in DS&A
+
+# class LinkedList:
+#     def __init__(self,value):
+    
+#     def append(self, value):
+#     def pop(self):
+#     def prepend(self, value):
+#     def insert(self,index, value):
+#     def remove(self, value):
+    
+
+
