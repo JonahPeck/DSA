@@ -58,27 +58,27 @@
 # #     self.color = color
 # cookie_one = Color('green')
 
-class Cookie:
-    def __init__(self,color):
-        self.color = color
+# class Cookie:
+#     def __init__(self,color):
+#         self.color = color
 
-    def get_color(self):
-        return self.color
+#     def get_color(self):
+#         return self.color
 
-    def set_color(self,color):
-        self.color = color
+#     def set_color(self,color):
+#         self.color = color
 
-cookie_one = Cookie('green')
-cookie_two = Cookie('blue')
+# cookie_one = Cookie('green')
+# cookie_two = Cookie('blue')
 
-print("Cookie one is", cookie_one.get_color())
-print("Cookie two is", cookie_two.get_color())
+# print("Cookie one is", cookie_one.get_color())
+# print("Cookie two is", cookie_two.get_color())
 
 
-cookie_one.set_color('yellow')
+# cookie_one.set_color('yellow')
 
-print("\nCookie one is now", cookie_one.get_color())
-print("Cookie two is", cookie_two.get_color())
+# print("\nCookie one is now", cookie_one.get_color())
+# print("Cookie two is", cookie_two.get_color())
 
 #classes will be used in DS&A
 
@@ -92,4 +92,15 @@ print("Cookie two is", cookie_two.get_color())
 #     def remove(self, value):
     
 
+#pointers
+num1 = 11
+num2 = num1
 
+print("Before num2 value is updated:")
+print("num1 = ", num2)
+print("num2 = ", num2)
+
+print("\nnum1 points to:", id(num1))
+print("num2 points to:", id(num2))
+
+num
