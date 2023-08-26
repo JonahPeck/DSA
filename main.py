@@ -108,3 +108,13 @@
 
 # A list can have an index within a data structure because each node is next to each other.
 # A LinkedList points to the next node but is not next to it and therefore it cannot have an index. 
+
+# LinkedLists and BigO
+
+# Appending a new node to the end of a linked list - O(1)
+# Removing a node from the end of a linked list - O(n) because you had to iterate through the whole list
+# Adding a node to the front of a linked list - O(1)
+# Removing a node from the front of a linked list - O(1)
+# Adding a node to the middle of the linked list - O(n) because you have to iterate through the list
+# Removing a node from the middle of the linked list - O(n) because you have to iterate through the list
+# Lookup a node through a linked list - O(n)
