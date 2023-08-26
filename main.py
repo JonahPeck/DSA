@@ -93,14 +93,18 @@
     
 
 #pointers
-num1 = 11
-num2 = num1
+# num1 = 11
+# num2 = num1
 
-print("Before num2 value is updated:")
-print("num1 = ", num2)
-print("num2 = ", num2)
+# print("Before num2 value is updated:")
+# print("num1 = ", num2)
+# print("num2 = ", num2)
 
-print("\nnum1 points to:", id(num1))
-print("num2 points to:", id(num2))
+# print("\nnum1 points to:", id(num1))
+# print("num2 points to:", id(num2))
 
-num
+# LinkedList - does not have an index - all of the nodes will be spread all over the place
+#variables known as head and tail which point to the first and last items.
+
+# A list can have an index within a data structure because each node is next to each other.
+# A LinkedList points to the next node but is not next to it and therefore it cannot have an index. 
