@@ -118,3 +118,23 @@
 # Adding a node to the middle of the linked list - O(n) because you have to iterate through the list
 # Removing a node from the middle of the linked list - O(n) because you have to iterate through the list
 # Lookup a node through a linked list - O(n)
+
+#A noe is the value as well as the pointer. Essentially a key value pair of "4" and "None"
+
+head = {
+    "value": 11,
+    "next": {
+        "value": 3,
+        "next": {
+            "value": 23,
+            "next": {
+                "value": 7,
+                "next": None
+                }
+            }
+        }
+    }
+print(head['next']['next']['value'])
+
+#This will only run with a linked list
+print(my_linked_list.head.next.next.value)
