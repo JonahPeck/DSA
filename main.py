@@ -203,4 +203,6 @@ my_linked_list.print_list()
 # my_linked_list = LinkedList(4)
 # print(my_linked_list)
 
+#pop - removing a node 
+
 
