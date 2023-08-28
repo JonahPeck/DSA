@@ -193,16 +193,35 @@ class LinkedList:
             self.tail.next = new_node
             self.tail = new_node
 
-        self.length += 1
-        return True
+    def pop(self):
+        if self.length == 0:
+            return None
+        pre = self.head
+        temp = self.head
+        while(temp.next):
+            pre = temp
+            temp = temp.next
+            #once the while loop is completed
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None
+        return temp.value
+        # self.length += 1
+        # return True
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
-my_linked_list.print_list()
+
+print(my_linked_list.pop())
+print(my_linked_list.pop())
+print(my_linked_list.pop())
 
 # my_linked_list = LinkedList(4)
 # print(my_linked_list)
 
-#pop - removing a node 
+#pop - removing a node from the end of the Linked List
 
 
