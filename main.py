@@ -210,30 +210,58 @@ class LinkedList:
             self.tail = None
         return temp.value
 
-        def prepend(self, value):
-            new_node = Node(value)
-            if self.length == 0:
-                self.head = new_node
-                self.tail = new_node
-            else:
-                new_node.next = self.head
-                self.head = new_node
-            self.length += 1
-            return True
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
 
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        self.head = self.head.next
+        temp.next = None
+        self.length -= 1 
+        if self.length == 0:
+            self.tail = None
+        return temp
+
+    def get(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        return temp
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
         # self.length += 1
         # return True
 
-my_linked_list = LinkedList(1)
-my_linked_list.append(2)
+my_linked_list = LinkedList(11)
+my_linked_list.append(3)
+my_linked_list.append(23)
+my_linked_list.append(7)
 
-print(my_linked_list.pop())
-print(my_linked_list.pop())
-print(my_linked_list.pop())
+my_linked_list.set_value(1,4)
+
+my_linked_list.print_list()
 
 # my_linked_list = LinkedList(4)
 # print(my_linked_list)
 
 #pop - removing a node from the end of the Linked List
+#get - pass in an index and return a node from that index.
+#set - 
 
 
