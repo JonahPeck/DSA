@@ -273,14 +273,29 @@ class LinkedList:
         temp.next = None
         self.length -= 1 
         return temp
+    def reverse(self):
+        if self.length == 0:
+            return False
+        if self.length == 1:
+            return True
+        temp = self.head
+        self.head = self.tail
+        self.tail = temp
+        after = temp.next
+        before = None
+        for _ in range(self.length):
+            after = temp.next
+            temp.next = before
+            before = temp
+            temp = after
 
 
-my_linked_list = LinkedList(11)
+my_linked_list = LinkedList(1)
+my_linked_list.append(2)
 my_linked_list.append(3)
-my_linked_list.append(23)
-my_linked_list.append(7)
+my_linked_list.append(4)
 
-print(my_linked_list.remove(2), '\n')
+my_linked_list.reverse()
 
 my_linked_list.print_list()
 
@@ -290,5 +305,5 @@ my_linked_list.print_list()
 #pop - removing a node from the end of the Linked List
 #get - pass in an index and return a node from that index.
 #remove
-
+#reverse - very common interview question
 
