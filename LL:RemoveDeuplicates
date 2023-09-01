@@ -47,7 +47,9 @@ class LinkedList:
     #                                     #
     #######################################
     def remove_duplicates(self):
+    #creates a new set - sets are a structure that cannot have repeats
             values = set()
+    #sets this pointer to be equal to none
             previous = None
             current = self.head
             while current:
