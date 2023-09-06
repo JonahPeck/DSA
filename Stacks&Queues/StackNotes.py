@@ -25,6 +25,16 @@ class Stack:
         while temp:
             print(temp.value)
             temp = temp.next
+    
+    def prepend(self,value):
+        new_node = Node(value)
+        if self.length == 0:
+            return new_node
+        else:
+            new_node = self.top
+            top = self.temp
+            self.temp = temp.next
+        return temp
 
 my_stack = Stack(4)
 my_stack.print_stack()
