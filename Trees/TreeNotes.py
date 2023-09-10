@@ -19,7 +19,24 @@ class Node:
 
 class BinarySearchTree:
     def __init__(self):
+#instead of head, the top node is referred to as the root node (self.root)
         self.root = None
+
+#insert method BST
+    def insert(self, value):
+        new_node = Node(value)
+        if self.root is None:
+            self.root = new_node
+            return True
+        temp = self.root
+        while (True):
+            if new_node.value == temp.value:
+                return False
+            if new_node.value < temp.value:
+                return
+                else:
+
+
 
 #within a binary search tree, nodes need to be laid out in a certain way
 #if the child node is greater in value than the parent node it will go on the right, 
