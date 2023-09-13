@@ -5,11 +5,11 @@
 #top node pointing to other nodes is known as the parent node pointing to a child node
 #nodes with the same parent are known as siblings 
 #every node can onlu have one parent
-{
-    "value": 4,
-    "left": None,
-    "right" None
-}
+# {
+#     "value": 4,
+#     "left": None,
+#     "right" None
+# }
 
 class Node:
     def __init__(self, value):
@@ -33,8 +33,25 @@ class BinarySearchTree:
             if new_node.value == temp.value:
                 return False
             if new_node.value < temp.value:
-                return
-                else:
+                if temp.left is None:
+                    temp.left = new_node
+                    return True
+                temp = temp.left
+            else:
+                if temp.right is None:
+                    temp.right = new_node
+                    return True
+                temp = temp.right
+
+my_tree = BinarySearchTree()
+my_tree.insert(2)
+my_tree.insert(1)
+my_tree.insert(3)
+
+print(my_tree.root.value)
+print(my_tree.root.left.value)
+print(my_tree.root.right.value)
+
 
 
 
