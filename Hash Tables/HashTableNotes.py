@@ -7,4 +7,3 @@
 #collisions - happens when a key value pair is put in a place where another key value pair already exists
 #separate chaining - putting 
 #linear probing - form of open addressing
-#linear probing
