@@ -41,6 +41,7 @@ class HashTable:
                     return self.data_map[index][i][1]
         return None
 # Get item for a hash table
+#learning what's next in hash tables
 
 my_hash_table = HashTable()
 my_hash_table.set_item('bolts', 300)
