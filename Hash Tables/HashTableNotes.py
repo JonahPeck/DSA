@@ -40,6 +40,7 @@ class HashTable:
                 if self.data_map[index][i][0] == key:
                     return self.data_map[index][i][1]
         return None
+# Get item for a hash table
 
 my_hash_table = HashTable()
 my_hash_table.set_item('bolts', 300)
