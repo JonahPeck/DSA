@@ -50,7 +50,6 @@ class HashTable:
         return all_keys
 
 
-
 my_hash_table = HashTable()
 my_hash_table.set_item('bolts', 300)
 my_hash_table.set_item('washers', 1500)
