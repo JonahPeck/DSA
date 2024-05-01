@@ -20,3 +20,4 @@ class Graph:
         self.adjust_list[vertex] = []
     
 #neeed to practice this much more to understand how to implement
+#hello again old friend
